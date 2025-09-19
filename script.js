@@ -186,7 +186,9 @@ function renderProducts(productsToRender) {
     
     productsGrid.innerHTML = productsToRender.map(product => `
         <div class="product-card" data-category="${product.category}">
-            <img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy">
+            <a href="product.html?id=${product.id}" class="product-image-link">
+                <img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy">
+            </a>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
                 <h3 class="product-title">${product.title}</h3>
@@ -195,9 +197,6 @@ function renderProducts(productsToRender) {
                 <div class="product-actions">
                     <button class="btn btn-primary" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart
-                    </button>
-                    <button class="btn btn-secondary" onclick="viewDetails(${product.id})">
-                        <i class="fas fa-eye"></i>
                     </button>
                     <button class="btn btn-wishlist" onclick="toggleWishlist(${product.id})">
                         <i class="fas fa-heart"></i>
@@ -341,13 +340,7 @@ function checkout() {
     closeCart();
 }
 
-// View product details
-function viewDetails(productId) {
-    const product = products.find(p => p.id === productId);
-    if (product) {
-        alert(`Product Details:\n\n${product.title}\nCategory: ${product.category}\nPrice: $${product.price.toFixed(2)}\n\n${product.description}`);
-    }
-}
+// View product details - now handled by clicking the image directly
 
 // Toggle wishlist
 function toggleWishlist(productId) {

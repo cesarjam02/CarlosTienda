@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalles del Producto - Tienda Virtual</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="product-styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>
+                    <img src="logo.png" alt="Logo Tienda" style="width:40px; height:40px; vertical-align:middle; border-radius:50%; margin-right:10px;">
+                    Tienda - Carlos Escalante
+                </h1>                              
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            <div class="container">
+                <a href="index.html">Inicio</a> / 
+                <a href="index.html#products">Productos</a> / 
+                <span id="breadcrumb-category">Electrónicos</span> / 
+                <span id="breadcrumb-product">Nombre del Producto</span>
+            </div>
+        </nav>
+
+        <!-- Product Details Section -->
+        <section class="product-details">
+            <div class="container">
+                <div class="product-detail-grid">
+                    <!-- Product Images -->
+                    <div class="product-images">
+                        <div class="main-image-container">
+                            <img id="main-image" src="" alt="Product Image" class="main-image">
+                            <div class="image-zoom-overlay" id="zoom-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-gallery" id="thumbnail-gallery">
+                            <!-- Thumbnails will be loaded here -->
+                        </div>
+                    </div>
+
+                    <!-- Product Info -->
+                    <div class="product-info-detail">
+                        <div class="product-category" id="product-category">Electronics</div>
+                        <h1 class="product-title-detail" id="product-title">Product Name</h1>
+                        
+                        <!-- Rating -->
+                        <div class="product-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">(4.8) 127 reviews</span>
+                        </div>
+
+                        <!-- Price -->
+                        <div class="price-section">
+                            <span class="current-price" id="current-price">$99.99</span>
+                            <span class="original-price" id="original-price">$129.99</span>
+                            <span class="discount-badge" id="discount-badge">Save 23%</span>
+                        </div>
+
+                        <!-- Description -->
+                        <div class="product-description-detail" id="product-description">
+                            Detailed product description will appear here...
+                        </div>
+
+                        <!-- Key Features -->
+                        <div class="key-features">
+                            <h3>Key Features</h3>
+                            <ul id="key-features-list">
+                                <!-- Features will be loaded here -->
+                            </ul>
+                        </div>
+
+                        <!-- Specifications -->
+                        <div class="specifications">
+                            <h3>Specifications</h3>
+                            <div class="specs-grid" id="specifications">
+                                <!-- Specifications will be loaded here -->
+                            </div>
+                        </div>
+
+                        <!-- Quantity and Actions -->
+                        <div class="product-actions-detail">
+                            <div class="quantity-selector">
+                                <label for="quantity">Quantity:</label>
+                                <div class="quantity-controls">
+                                    <button class="qty-btn" onclick="changeQuantity(-1)">-</button>
+                                    <input type="number" id="quantity" value="1" min="1" max="10">
+                                    <button class="qty-btn" onclick="changeQuantity(1)">+</button>
+                                </div>
+                            </div>
+                            
+                            <div class="action-buttons">
+                                <button class="btn btn-primary btn-large" onclick="addToCartFromDetail()">
+                                    <i class="fas fa-shopping-cart"></i> Add to Cart
+                                </button>
+                                <button class="btn btn-secondary btn-large" onclick="addToWishlist()">
+                                    <i class="fas fa-heart"></i> Add to Wishlist
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Shipping Info -->
+                        <div class="shipping-info">
+                            <div class="shipping-item">
+                                <i class="fas fa-truck"></i>
+                                <span>Free shipping on orders over $50</span>
+                            </div>
+                            <div class="shipping-item">
+                                <i class="fas fa-undo"></i>
+                                <span>30-day return policy</span>
+                            </div>
+                            <div class="shipping-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>2-year warranty included</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs -->
+        <section class="product-tabs">
+            <div class="container">
+                <div class="tab-navigation">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="specifications">Specifications</button>
+                    <button class="tab-btn" data-tab="reviews">Reviews (127)</button>
+                    <button class="tab-btn" data-tab="shipping">Shipping & Returns</button>
+                </div>
+
+                <div class="tab-content">
+                    <div class="tab-panel active" id="description-tab">
+                        <h3>Product Description</h3>
+                        <div id="detailed-description">
+                            <!-- Detailed description will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="specifications-tab">
+                        <h3>Technical Specifications</h3>
+                        <div id="detailed-specifications">
+                            <!-- Detailed specifications will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="reviews-tab">
+                        <h3>Customer Reviews</h3>
+                        <div class="reviews-summary">
+                            <div class="rating-breakdown">
+                                <div class="rating-item">
+                                    <span>5 stars</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span>108</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>4 stars</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 12%"></div>
+                                    </div>
+                                    <span>15</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>3 stars</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 2%"></div>
+                                    </div>
+                                    <span>3</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>2 stars</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 1%"></div>
+                                    </div>
+                                    <span>1</span>
+                                </div>
+                                <div class="rating-item">
+                                    <span>1 star</span>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 0%"></div>
+                                    </div>
+                                    <span>0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reviews-list" id="reviews-list">
+                            <!-- Reviews will be loaded here -->
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="shipping-tab">
+                        <h3>Shipping & Returns</h3>
+                        <div class="shipping-details">
+                            <h4>Shipping Information</h4>
+                            <ul>
+                                <li>Free standard shipping on orders over $50</li>
+                                <li>Express shipping available for $9.99</li>
+                                <li>Processing time: 1-2 business days</li>
+                                <li>Delivery time: 3-7 business days</li>
+                            </ul>
+                            
+                            <h4>Return Policy</h4>
+                            <ul>
+                                <li>30-day return window from delivery date</li>
+                                <li>Items must be in original condition</li>
+                                <li>Free return shipping for defective items</li>
+                                <li>Refund processed within 5-7 business days</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Related Products -->
+        <section class="related-products">
+            <div class="container">
+                <h2>Related Products</h2>
+                <div class="related-products-grid" id="related-products">
+                    <!-- Related products will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Image Zoom Modal -->
+    <div class="image-zoom-modal" id="image-zoom-modal">
+        <div class="zoom-modal-content">
+            <span class="zoom-close">&times;</span>
+            <img id="zoomed-image" src="" alt="Zoomed Product Image">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          
+          <!-- Logo y descripción -->
+          <div class="footer-logo">
+            <img src="logo.png" alt="Logo Tienda" />
+            <h2>Tienda - Carlos Escalante</h2>
+            <p>Ofrecemos los mejores productos con calidad y confianza.</p>
+          </div>
+      
+          <!-- Menú de enlaces -->
+          <div class="footer-links">
+            <h3>Enlaces rápidos</h3>
+            <ul>
+              <li><a href="index.html">Inicio</a></li>
+              <li><a href="index.html#products">Productos</a></li>
+              <li><a href="#about">Nosotros</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+      
+          <!-- Contacto -->
+          <div class="footer-contact">
+            <h3>Contáctanos</h3>
+            <p>Email: contacto@tienda-carlos.com</p>
+            <p>Tel: +593 999 123 456</p>
+            <p>Dirección: Quito, Ecuador</p>
+          </div>
+      
+          <!-- Redes sociales -->
+          <div class="footer-social">
+            <h3>Síguenos</h3>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+          </div>
+      
+        </div>
+      
+        <!-- Derechos reservados -->
+        <div class="footer-bottom">
+          <p>&copy; 2024 Tienda - Carlos Escalante. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+    <script src="product-script.js"></script>
+</body>
+</html>
