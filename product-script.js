@@ -100,6 +100,47 @@ const enhancedProducts = {
             }
         ]
     },
+    3: {
+        id: 3,
+        title: "Laptop Pro 15-inch",
+        category: "electronics",
+        price: 1299.99,
+        originalPrice: 1599.99,
+        images: [
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Powerful laptop perfect for work and creative projects.",
+        detailedDescription: "Unleash your creativity and productivity with this professional-grade laptop. Featuring a stunning 15-inch Retina display, powerful M2 processor, and all-day battery life, this laptop is perfect for designers, developers, and business professionals. The sleek aluminum design and backlit keyboard make it a joy to use in any environment.",
+        keyFeatures: [
+            "15-inch Retina Display",
+            "M2 Chip with 8-core CPU",
+            "16GB unified memory",
+            "512GB SSD storage",
+            "Up to 18 hours battery life",
+            "Backlit Magic Keyboard",
+            "Touch ID for secure authentication"
+        ],
+        specifications: {
+            "Display": "15-inch Retina (2880x1800)",
+            "Processor": "Apple M2",
+            "Memory": "16GB unified memory",
+            "Storage": "512GB SSD",
+            "Graphics": "10-core GPU",
+            "Battery": "Up to 18 hours",
+            "Weight": "3.5 lbs"
+        },
+        reviews: [
+            {
+                name: "David Kim",
+                rating: 5,
+                date: "2024-01-22",
+                text: "Incredible performance! The M2 chip is blazing fast and the battery life is amazing. Perfect for my design work."
+            }
+        ]
+    },
     4: {
         id: 4,
         title: "Cotton T-Shirt",
@@ -144,6 +185,457 @@ const enhancedProducts = {
                 rating: 4,
                 date: "2024-01-05",
                 text: "Great basic tee. Fits perfectly and the fabric is really soft. Good value for money."
+            }
+        ]
+    },
+    5: {
+        id: 5,
+        title: "Denim Jeans",
+        category: "clothing",
+        price: 59.99,
+        originalPrice: 79.99,
+        images: [
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Classic blue denim jeans with perfect fit and comfort.",
+        detailedDescription: "Crafted from premium denim, these jeans offer the perfect combination of style and comfort. The classic straight fit flatters every body type, while the durable construction ensures they'll last for years. Available in multiple washes and sizes.",
+        keyFeatures: [
+            "Premium denim construction",
+            "Classic straight fit",
+            "Reinforced stress points",
+            "Multiple wash options",
+            "Sizes 28-40",
+            "Machine washable",
+            "Made to last"
+        ],
+        specifications: {
+            "Material": "98% Cotton, 2% Elastane",
+            "Fit": "Straight",
+            "Rise": "Mid-rise",
+            "Care": "Machine wash cold",
+            "Origin": "Made in USA",
+            "Washes": "3 available",
+            "Sizes": "28-40"
+        },
+        reviews: [
+            {
+                name: "Michael Torres",
+                rating: 5,
+                date: "2024-01-14",
+                text: "Perfect fit and great quality! These jeans are comfortable and look great. Highly recommend!"
+            }
+        ]
+    },
+    6: {
+        id: 6,
+        title: "Winter Jacket",
+        category: "clothing",
+        price: 129.99,
+        originalPrice: 179.99,
+        images: [
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Warm and stylish winter jacket for cold weather.",
+        detailedDescription: "Stay warm and stylish during the coldest months with this premium winter jacket. Featuring advanced insulation technology and a water-resistant shell, this jacket provides superior protection against the elements while maintaining a sleek, modern design.",
+        keyFeatures: [
+            "Advanced insulation technology",
+            "Water-resistant shell",
+            "Adjustable hood",
+            "Multiple pockets",
+            "Available in 4 colors",
+            "Sizes S-XXL",
+            "Machine washable"
+        ],
+        specifications: {
+            "Material": "Polyester shell, synthetic insulation",
+            "Water Resistance": "10,000mm",
+            "Breathability": "5,000g/m²/24h",
+            "Care": "Machine wash cold",
+            "Origin": "Made in Canada",
+            "Colors": "4 available",
+            "Sizes": "S-XXL"
+        },
+        reviews: [
+            {
+                name: "Sarah Wilson",
+                rating: 5,
+                date: "2024-01-16",
+                text: "Incredibly warm and stylish! Perfect for cold weather. The quality is outstanding."
+            }
+        ]
+    },
+    7: {
+        id: 7,
+        title: "Coffee Maker",
+        category: "home",
+        price: 79.99,
+        originalPrice: 99.99,
+        images: [
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Programmable coffee maker for the perfect morning brew.",
+        detailedDescription: "Start your day right with this programmable coffee maker that delivers consistently perfect coffee every time. Featuring a 12-cup capacity, programmable timer, and auto-shutoff, this coffee maker is designed for convenience and quality.",
+        keyFeatures: [
+            "12-cup capacity",
+            "Programmable timer",
+            "Auto-shutoff",
+            "Permanent filter",
+            "Glass carafe",
+            "Easy to clean",
+            "2-year warranty"
+        ],
+        specifications: {
+            "Capacity": "12 cups",
+            "Power": "900W",
+            "Material": "Stainless steel and plastic",
+            "Filter": "Permanent gold-tone",
+            "Timer": "24-hour programmable",
+            "Warranty": "2 years",
+            "Dimensions": "10.5 x 8 x 11 inches"
+        },
+        reviews: [
+            {
+                name: "Robert Garcia",
+                rating: 5,
+                date: "2024-01-18",
+                text: "Great coffee maker! The programmable timer is perfect for my morning routine. Coffee tastes great every time."
+            }
+        ]
+    },
+    8: {
+        id: 8,
+        title: "Indoor Plant Set",
+        category: "home",
+        price: 39.99,
+        originalPrice: 49.99,
+        images: [
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Beautiful set of 3 indoor plants to brighten your space.",
+        detailedDescription: "Transform your living space with this curated collection of 3 easy-care indoor plants. Each plant is carefully selected for its beauty and low-maintenance requirements, making them perfect for both beginners and experienced plant enthusiasts.",
+        keyFeatures: [
+            "3 easy-care plants",
+            "Decorative planters included",
+            "Care instructions provided",
+            "Air-purifying properties",
+            "Perfect for beginners",
+            "Various sizes",
+            "30-day guarantee"
+        ],
+        specifications: {
+            "Plants": "3 different varieties",
+            "Planters": "Included",
+            "Care Level": "Easy",
+            "Light": "Bright indirect",
+            "Watering": "Weekly",
+            "Guarantee": "30 days",
+            "Height": "6-12 inches"
+        },
+        reviews: [
+            {
+                name: "Emma Thompson",
+                rating: 5,
+                date: "2024-01-19",
+                text: "Beautiful plants! They arrived in perfect condition and are thriving in my home. Great addition to my space."
+            }
+        ]
+    },
+    9: {
+        id: 9,
+        title: "Kitchen Knife Set",
+        category: "home",
+        price: 89.99,
+        originalPrice: 119.99,
+        images: [
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Professional-grade knife set for all your cooking needs.",
+        detailedDescription: "Elevate your culinary skills with this professional-grade knife set. Each knife is crafted from high-carbon stainless steel and features ergonomic handles for comfort and precision. Perfect for both home cooks and professional chefs.",
+        keyFeatures: [
+            "High-carbon stainless steel",
+            "Ergonomic handles",
+            "Professional sharpness",
+            "Dishwasher safe",
+            "Lifetime warranty",
+            "Storage block included",
+            "6-piece set"
+        ],
+        specifications: {
+            "Material": "High-carbon stainless steel",
+            "Handles": "Ergonomic design",
+            "Set": "6 pieces",
+            "Care": "Dishwasher safe",
+            "Warranty": "Lifetime",
+            "Storage": "Wooden block included",
+            "Origin": "Made in Germany"
+        },
+        reviews: [
+            {
+                name: "Chef Maria",
+                rating: 5,
+                date: "2024-01-21",
+                text: "Excellent knife set! Sharp, well-balanced, and comfortable to use. The quality is outstanding."
+            }
+        ]
+    },
+    10: {
+        id: 10,
+        title: "Yoga Mat",
+        category: "sports",
+        price: 34.99,
+        originalPrice: 49.99,
+        images: [
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Non-slip yoga mat for comfortable practice sessions.",
+        detailedDescription: "Enhance your yoga practice with this premium non-slip yoga mat. Made from eco-friendly materials, this mat provides excellent grip and cushioning for all types of yoga poses and exercises.",
+        keyFeatures: [
+            "Non-slip surface",
+            "Eco-friendly materials",
+            "Extra thick for comfort",
+            "Lightweight and portable",
+            "Easy to clean",
+            "Available in 4 colors",
+            "1-year warranty"
+        ],
+        specifications: {
+            "Material": "Eco-friendly TPE",
+            "Thickness": "6mm",
+            "Length": "72 inches",
+            "Width": "24 inches",
+            "Weight": "2.5 lbs",
+            "Care": "Hand wash",
+            "Warranty": "1 year"
+        },
+        reviews: [
+            {
+                name: "Yoga Instructor Lisa",
+                rating: 5,
+                date: "2024-01-17",
+                text: "Perfect yoga mat! Great grip and cushioning. My students love it too."
+            }
+        ]
+    },
+    11: {
+        id: 11,
+        title: "Running Shoes",
+        category: "sports",
+        price: 119.99,
+        originalPrice: 149.99,
+        images: [
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Lightweight running shoes with excellent cushioning and support.",
+        detailedDescription: "Take your running to the next level with these lightweight, high-performance running shoes. Featuring advanced cushioning technology and breathable materials, these shoes provide the perfect balance of comfort and performance.",
+        keyFeatures: [
+            "Lightweight design",
+            "Advanced cushioning",
+            "Breathable upper",
+            "Durable outsole",
+            "Available in 5 colors",
+            "Sizes 7-12",
+            "30-day trial"
+        ],
+        specifications: {
+            "Weight": "8.5 oz",
+            "Drop": "8mm",
+            "Upper": "Mesh and synthetic",
+            "Midsole": "EVA foam",
+            "Outsole": "Rubber",
+            "Sizes": "7-12",
+            "Colors": "5 available"
+        },
+        reviews: [
+            {
+                name: "Marathon Runner Tom",
+                rating: 5,
+                date: "2024-01-13",
+                text: "Best running shoes I've ever owned! Light, comfortable, and great for long distances."
+            }
+        ]
+    },
+    12: {
+        id: 12,
+        title: "Dumbbell Set",
+        category: "sports",
+        price: 89.99,
+        originalPrice: 119.99,
+        images: [
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Adjustable dumbbell set for home workouts.",
+        detailedDescription: "Build strength and muscle with this versatile adjustable dumbbell set. Perfect for home gyms, this set allows you to adjust the weight from 5 to 50 pounds per dumbbell, giving you endless workout possibilities in a compact design.",
+        keyFeatures: [
+            "Adjustable weight (5-50 lbs)",
+            "Compact design",
+            "Easy weight adjustment",
+            "Durable construction",
+            "Includes storage rack",
+            "Workout guide included",
+            "2-year warranty"
+        ],
+        specifications: {
+            "Weight Range": "5-50 lbs per dumbbell",
+            "Material": "Cast iron plates",
+            "Grip": "Ergonomic design",
+            "Adjustment": "Quick-dial system",
+            "Storage": "Rack included",
+            "Warranty": "2 years",
+            "Weight": "45 lbs total"
+        },
+        reviews: [
+            {
+                name: "Fitness Enthusiast John",
+                rating: 5,
+                date: "2024-01-11",
+                text: "Amazing dumbbell set! Saves so much space and the weight adjustment is super easy. Perfect for home workouts."
+            }
+        ]
+    },
+    13: {
+        id: 13,
+        title: "Programming Book",
+        category: "books",
+        price: 49.99,
+        originalPrice: 69.99,
+        images: [
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Comprehensive guide to modern programming techniques.",
+        detailedDescription: "Master modern programming with this comprehensive guide that covers everything from basic concepts to advanced techniques. Written by industry experts, this book provides practical examples and real-world applications that will help you become a better programmer.",
+        keyFeatures: [
+            "Comprehensive coverage",
+            "Practical examples",
+            "Real-world applications",
+            "Expert authors",
+            "Updated content",
+            "Online resources",
+            "500+ pages"
+        ],
+        specifications: {
+            "Pages": "512",
+            "Format": "Paperback",
+            "Language": "English",
+            "Publisher": "Tech Press",
+            "Edition": "3rd",
+            "ISBN": "978-1234567890",
+            "Year": "2024"
+        },
+        reviews: [
+            {
+                name: "Software Developer Alex",
+                rating: 5,
+                date: "2024-01-09",
+                text: "Excellent book! Clear explanations and great examples. Helped me improve my programming skills significantly."
+            }
+        ]
+    },
+    14: {
+        id: 14,
+        title: "Cookbook Collection",
+        category: "books",
+        price: 29.99,
+        originalPrice: 39.99,
+        images: [
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Delicious recipes from around the world.",
+        detailedDescription: "Explore the world through food with this amazing collection of recipes from different cultures. From Italian pasta to Asian stir-fries, this cookbook offers something for every taste and skill level.",
+        keyFeatures: [
+            "International recipes",
+            "Beautiful photography",
+            "Step-by-step instructions",
+            "Dietary information",
+            "Cooking tips",
+            "200+ recipes",
+            "Hardcover edition"
+        ],
+        specifications: {
+            "Pages": "320",
+            "Format": "Hardcover",
+            "Language": "English",
+            "Publisher": "Culinary Press",
+            "Edition": "1st",
+            "ISBN": "978-0987654321",
+            "Year": "2024"
+        },
+        reviews: [
+            {
+                name: "Home Chef Sarah",
+                rating: 5,
+                date: "2024-01-07",
+                text: "Love this cookbook! The recipes are easy to follow and the photos are beautiful. Great variety of dishes."
+            }
+        ]
+    },
+    15: {
+        id: 15,
+        title: "Fiction Novel",
+        category: "books",
+        price: 19.99,
+        originalPrice: 29.99,
+        images: [
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
+        description: "Bestselling fiction novel that will keep you engaged.",
+        detailedDescription: "Immerse yourself in this captivating fiction novel that has captured the hearts of readers worldwide. With compelling characters and an engaging plot, this book is perfect for anyone who loves a good story.",
+        keyFeatures: [
+            "Bestselling author",
+            "Compelling storyline",
+            "Well-developed characters",
+            "Page-turner",
+            "Award-winning",
+            "Book club favorite",
+            "400+ pages"
+        ],
+        specifications: {
+            "Pages": "432",
+            "Format": "Paperback",
+            "Language": "English",
+            "Publisher": "Fiction House",
+            "Edition": "1st",
+            "ISBN": "978-1122334455",
+            "Year": "2024"
+        },
+        reviews: [
+            {
+                name: "Book Lover Emma",
+                rating: 5,
+                date: "2024-01-06",
+                text: "Absolutely loved this book! Couldn't put it down. The story is engaging and the characters are so well-written."
             }
         ]
     }

@@ -1,4 +1,4 @@
-// Sample product data with diverse categories
+// Sample product data with diverse categories and multiple images
 const products = [
     // Electronics
     {
@@ -6,7 +6,14 @@ const products = [
         title: "Wireless Bluetooth Headphones",
         category: "electronics",
         price: 89.99,
+        originalPrice: 129.99,
         image: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1572536147248-ac59a8abfa4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "High-quality wireless headphones with noise cancellation and 30-hour battery life."
     },
     {
@@ -14,7 +21,14 @@ const products = [
         title: "Smartphone 128GB",
         category: "electronics",
         price: 699.99,
+        originalPrice: 899.99,
         image: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Latest smartphone with advanced camera system and all-day battery."
     },
     {
@@ -22,7 +36,14 @@ const products = [
         title: "Laptop Pro 15-inch",
         category: "electronics",
         price: 1299.99,
+        originalPrice: 1599.99,
         image: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Powerful laptop perfect for work and creative projects."
     },
     
@@ -32,7 +53,14 @@ const products = [
         title: "Cotton T-Shirt",
         category: "clothing",
         price: 24.99,
+        originalPrice: 34.99,
         image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1503341504253-dff4815485f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1576566588028-4147f3842f27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Comfortable 100% cotton t-shirt in various colors and sizes."
     },
     {
@@ -40,7 +68,14 @@ const products = [
         title: "Denim Jeans",
         category: "clothing",
         price: 59.99,
+        originalPrice: 79.99,
         image: "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542272604-787c3835535d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Classic blue denim jeans with perfect fit and comfort."
     },
     {
@@ -48,7 +83,14 @@ const products = [
         title: "Winter Jacket",
         category: "clothing",
         price: 129.99,
+        originalPrice: 179.99,
         image: "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1551028719-00167b16eac5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Warm and stylish winter jacket for cold weather."
     },
     
@@ -58,7 +100,14 @@ const products = [
         title: "Coffee Maker",
         category: "home",
         price: 79.99,
+        originalPrice: 99.99,
         image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Programmable coffee maker for the perfect morning brew."
     },
     {
@@ -66,7 +115,14 @@ const products = [
         title: "Indoor Plant Set",
         category: "home",
         price: 39.99,
+        originalPrice: 49.99,
         image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Beautiful set of 3 indoor plants to brighten your space."
     },
     {
@@ -74,7 +130,14 @@ const products = [
         title: "Kitchen Knife Set",
         category: "home",
         price: 89.99,
+        originalPrice: 119.99,
         image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Professional-grade knife set for all your cooking needs."
     },
     
@@ -84,7 +147,14 @@ const products = [
         title: "Yoga Mat",
         category: "sports",
         price: 34.99,
+        originalPrice: 49.99,
         image: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Non-slip yoga mat for comfortable practice sessions."
     },
     {
@@ -92,7 +162,14 @@ const products = [
         title: "Running Shoes",
         category: "sports",
         price: 119.99,
+        originalPrice: 149.99,
         image: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Lightweight running shoes with excellent cushioning and support."
     },
     {
@@ -100,7 +177,14 @@ const products = [
         title: "Dumbbell Set",
         category: "sports",
         price: 89.99,
+        originalPrice: 119.99,
         image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Adjustable dumbbell set for home workouts."
     },
     
@@ -110,7 +194,14 @@ const products = [
         title: "Programming Book",
         category: "books",
         price: 49.99,
+        originalPrice: 69.99,
         image: "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Comprehensive guide to modern programming techniques."
     },
     {
@@ -118,7 +209,14 @@ const products = [
         title: "Cookbook Collection",
         category: "books",
         price: 29.99,
+        originalPrice: 39.99,
         image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Delicious recipes from around the world."
     },
     {
@@ -126,7 +224,14 @@ const products = [
         title: "Fiction Novel",
         category: "books",
         price: 19.99,
+        originalPrice: 29.99,
         image: "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+        images: [
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+        ],
         description: "Bestselling fiction novel that will keep you engaged."
     }
 ];
@@ -188,12 +293,16 @@ function renderProducts(productsToRender) {
         <div class="product-card" data-category="${product.category}">
             <a href="product.html?id=${product.id}" class="product-image-link">
                 <img src="${product.image}" alt="${product.title}" class="product-image" loading="lazy">
+                ${product.originalPrice ? `<div class="discount-badge">Save ${Math.round((1 - product.price / product.originalPrice) * 100)}%</div>` : ''}
             </a>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
                 <h3 class="product-title">${product.title}</h3>
                 <p class="product-description">${product.description}</p>
-                <div class="product-price">$${product.price.toFixed(2)}</div>
+                <div class="product-price">
+                    <span class="current-price">$${product.price.toFixed(2)}</span>
+                    ${product.originalPrice ? `<span class="original-price">$${product.originalPrice.toFixed(2)}</span>` : ''}
+                </div>
                 <div class="product-actions">
                     <button class="btn btn-primary" onclick="addToCart(${product.id})">
                         <i class="fas fa-shopping-cart"></i> Add to Cart
